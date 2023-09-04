@@ -1,0 +1,8 @@
+name: Semgrep PR scans
+on:
+  pull_request:
+
+jobs:
+  semgrep-scan:
+    uses: ironsource-aura/aura-security-scans/.github/workflows/github-semgrep-scan-workflow.yml@main
+    secrets: inherit
